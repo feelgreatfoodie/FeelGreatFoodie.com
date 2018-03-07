@@ -10,11 +10,27 @@ $(function() {
     return response.json()
   }).then(function(data) {
     console.log(data)
-    // localStorage.setItem('recipes', JSON.parse(data))
+
+    makeRecipeCards(data)
 
   }).catch(function() {
     console.log("Chuck Norris was here")
   })
-  // const recipes = JSON.parse(localStorage.getItem('recipes')) || {}
-  // console.log(`const recipes = ${recipes}`)
+
 })
+
+
+const makeRecipeCards = function (data) {
+  data.recipes.map(function (e) {
+    let recipeName = e.title
+    let recipeImg = e.image_url
+    let recipeURL = e.f2f_url
+    let recipeObject = {name: recipeName, 'img': recipeImg, 'url': recipeURL}
+
+    let recipeElement = `<div class="recipe"><h4 class="recipe-title">${recipeName}</h4><br><img src=${recipeImg}><br><a href=${recipeURL}><span class="more">MORE<span></a></div>`
+
+    $('#container-recipes').append(recipeElement)
+
+
+  })
+}
