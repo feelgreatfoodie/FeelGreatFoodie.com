@@ -77,6 +77,17 @@ width: 100%;
   margin: 1%;
   text-align: center;
 }
+
+.recipe i {
+    color: rgb(199, 162, 32);
+    cursor: hand;
+    font-size: 1.5em;
+}
+
+.recipe h4 {
+  display: inline;
+}
+
 .pic, .recipe img {
   max-width: 200px;
   margin: 1% auto;
