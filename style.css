@@ -29,6 +29,9 @@
 padding: 2%;
 }
 
+.carousel-inner img{
+width: 100%;
+}
 .carousel-caption {
   top: 50%;
   transform: translateY(-50%);
