@@ -36,17 +36,23 @@ a, a:hover, a::after, a:active {
 .wrapper {
 padding: 2%;
 }
-#myCarousel {
+
+/* BEGIN carousel style */
+/* #myCarousel {
   display: flex;
-}
+} */
 .carousel-inner img{
 max-height: 600px;
+width: 100%;
 }
 .carousel-caption {
   top: 50%;
   transform: translateY(-50%);
   text-transform: uppercase;
 }
+
+/* END carousel style */
+
 .journey {
   display: flex;
   flex-basis: 32%;
