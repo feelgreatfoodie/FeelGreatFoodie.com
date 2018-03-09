@@ -1,3 +1,20 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  /* font-size: 10px; */
+}
+
+img,
+.img-responsive, {
+  border-radius: 3px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
@@ -15,9 +32,7 @@
   font-size: 2em;
 }
 
-.navbar-inverse .navbar-nav .active a,
-.navbar-inverse .navbar-nav .active a:focus,
-.navbar-inverse .navbar-nav .active a:hover {
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
   color: #fff;
   background-color: rgb(18, 105, 185);
 }
@@ -26,29 +41,34 @@
   color: #d5d5d5;
 }
 
-.navbar-brand span{
+.navbar-brand h1 {
   color: #fff;
 }
+
 a, a:hover, a::after, a:active {
   text-decoration: none;
 }
 
 .wrapper {
-padding: 2%;
+  padding: 2%;
 }
 
 /* BEGIN carousel style */
-/* #myCarousel {
-  display: flex;
-} */
-.carousel-inner img{
-max-height: 600px;
-width: 100%;
+
+.carousel-inner img {
+  max-height: 600px;
+  width: 100%;
 }
+
 .carousel-caption {
   top: 50%;
   transform: translateY(-50%);
   text-transform: uppercase;
+}
+
+
+#myCarousel img {
+  border-radius: 0px;
 }
 
 /* END carousel style */
@@ -58,17 +78,23 @@ width: 100%;
   flex-basis: 32%;
   align-items: center;
 }
+
 .journey div img {
   width: 100%;
-  /* height: 100%; */
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
 }
+
 .reviews {
   display: flex;
   align-items: center;
 }
+
 .reviews h3, h4 {
   text-align: center;
 }
+
 .btn {
   font-size: 18px;
   color: white;
@@ -90,7 +116,7 @@ width: 100%;
   margin: 5%;
 }
 
-#foodSearch{
+#foodSearch {
   min-width: 400px;
   text-align: center;
 }
@@ -102,12 +128,14 @@ width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 #container-favorites {
   text-align: center;
   min-height: 300px;
   margin: 0 auto;
   max-width: 90%;
 }
+
 #stomach {
   max-width: 75%;
   margin: 1% 0 5%;
@@ -120,9 +148,9 @@ width: 100%;
 }
 
 .recipe i {
-    color: rgb(199, 162, 32);
-    cursor: hand;
-    font-size: 1.5em;
+  color: rgb(199, 162, 32);
+  cursor: hand;
+  font-size: 1.5em;
 }
 
 .recipe h4 {
@@ -144,20 +172,31 @@ footer {
   padding: 3%;
   color: white;
 }
+
 .fa {
   padding: 8px;
   font-size: 30px;
   color: white;
 }
+
 .fa:hover, footer h3:hover {
   text-decoration: none;
   color: #d5d5d5;
 }
+
 footer h3 {
   color: white;
 }
+
 .connect {
   text-align: right;
+}
+
+img {
+  border-radius: 10px;
+}
+.review {
+  height: 350px;
 }
 
 @media (max-width: 990px) {
@@ -165,13 +204,21 @@ footer h3 {
     display: flex;
     flex-wrap: wrap;
   }
-  .img-book     { order: 4;}
-  .img-movie    { order: 1;}
-  .review-book  { order: 3;}
-  .review-movie { order: 2;}
-
+  .img-book {
+    order: 4;
+  }
+  .img-movie {
+    order: 1;
+  }
+  .review-book {
+    order: 3;
+  }
+  .review-movie {
+    order: 2;
+  }
 }
-@media (max-width: 687px) {
+
+@media (max-width: 768px) {
   .wrapper {
     padding: 2%;
   }
@@ -181,11 +228,12 @@ footer h3 {
   .drop-down, .search {
     text-align: center;
   }
+  .journey div img {
+    width: 240px;
+    height: 160px;
+  }
   #foodSearch {
     min-width: 300px;
-  }
-  .pic {
-    max-width: 150px;
   }
   h4 {
     font-size: .9em;
@@ -202,7 +250,6 @@ footer h3 {
   #container-recipes {
     justify-content: center;
   }
-
   .recipe {
     flex-basis: 45%;
   }
@@ -210,7 +257,7 @@ footer h3 {
     font-size: 20px;
     padding: 10px;
   }
-  .hide-me{
+  .hide-me {
     display: none;
   }
   .footer-row {
@@ -218,17 +265,47 @@ footer h3 {
   }
 }
 
-@media (max-width: 450px ) {
+@media (max-width: 450px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .journey {
+    flex-direction: column;
+  }
+  .pic {
+    max-width: 80%;
+  }
   .reviews {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-center;
   }
-  .reviews img, .blog img {margin: 2% 0 0 10%;}
-  .img-book     { order: 3;}
-  .img-movie    { order: 1;}
-  .review-book  { order: 4;}
-  .review-movie { order: 2;}
-  img {width: 80%;}
-
+  .reviews img, .blog img {
+    margin: 2% 0 0 10%;
+  }
+  .img-book {
+    order: 3;
+  }
+  .img-movie {
+    order: 1;
+  }
+  .review-book {
+    order: 4;
+  }
+  .review-movie {
+    order: 2;
+  }
+  img {
+    width: 80%;
+    border-radius: 10px;
+  }
+  #carousel img {
+    border-radius: 0px;
+  }
+  footer h3 {
+    font-size: 18px;
+  }
 }
