@@ -18,7 +18,7 @@
 <body>
   <nav class="navbar navbar-inverse">
     <div class="wrapper container-fluid">
-      <div class="container">
+      <div class="navbar-container">
 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -30,11 +30,11 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#myCarousel">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skill Building</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skill Building</a></li>
             <li><a href="#awesome-recipes">Recipes</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="favorites.html">Your Favorites</a></li>
+            <li><a href="#footer">Contact</a></li>
         </div>
       </div>
   </nav>
@@ -44,22 +44,42 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="assets/01.png">
-        <div class="carousel-caption">
+        <img src="assets/turkeyDay17.jpg">
+        <!-- <div class="carousel-caption">
           <h1>Read the latest blogs</h1>
           <br>
           <button type="button" class="btn btn-default">Get Started</button>
-        </div>
+        </div> -->
       </div>
 
       <div class="item">
-        <img src="assets/02.png">
+        <img src="assets/IMG_2742.jpg">
       </div>
       <div class="item">
-        <img src="assets/03.png">
+        <img src="assets/IMG_7797.jpg">
+      </div>
+      <div class="item">
+        <img src="assets/IMG_1270.jpg">
+      </div>
+      <div class="item">
+        <img src="assets/C3C88BDF-2E85-4AE5-A885-ECF8CB7B0B20.jpg">
+      </div>
+      <div class="item">
+        <img src="assets/IMG_1118.jpg">
+      </div>
+      <div class="item">
+        <img src="assets/IMG_3133.jpg">
+      </div>
+      <div class="item">
+        <img src="assets/IMG_3354.jpg">
       </div>
     </div>
 
@@ -73,28 +93,28 @@
     </a>
   </div>
 
-  <div class="conainer text-center">
-    <h2>How did we get here?</h2>
-    <div class="row">
+  <div class="container text-center">
+    <h1>How did we get here?</h1>
+    <div class="row journey">
       <div class="col-sm-4">
-        <img src="assets/04.png" class="pic">
-        <h4>About Me</h4>
+        <img src="assets/beginning.jpg" class="pic">
+        <h4>In The Beginning:<br>basic assembly</h4>
       </div>
       <div class="col-sm-4">
-        <img src="assets/05.png" class="pic">
-        <h4>Skill Building</h4>
+        <img src="assets/inspiredbyBlueApron.jpg" class="pic">
+        <h4>Blue Apron Inspired:<br>Wow, I made that!</h4>
       </div>
       <div class="col-sm-4">
-        <img src="assets/06.png" class="pic">
-        <h4>Recipes</h4>
+        <img src="assets/boeufBourginion.jpg" class="pic">
+        <h4>Finding awesome recipes!<br>Ooh la la!!!</h4>
       </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container blog">
     <div class="row">
-      <div class="col-md-6">
-        <h4>Here's the cool thing about Cooking...</h4>
+      <div class="col-md-12">
+        <h1>Here's the cool thing about Cooking...</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
           in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -104,33 +124,33 @@
           in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div class="col-md-6">
+      <!-- <div class="col-md-6">
         <img src="assets/07.png" class="img-responsive">
-      </div>
+      </div> -->
     </div>
   </div>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <h4>Ratatouille movie review</h4>
+    <div class="row reviews">
+      <div class="col-md-3 col-sm-6 col-xs-12 review-movie">
+        <h3>Ratatouille</h3><h4>movie review</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
           in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <img src="assets/08.jpg" class="img-responsive">
+      <div class="col-md-3 col-sm-6 col-xs-12 img-movie">
+        <img src="https://image.tmdb.org/t/p/w1280/y8y6Fv0k068OnHBZtu949A1t6pj.jpg" class="img-responsive">
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <h4>Salt, Sugar, Fat book review</h4>
+      <div class="col-md-3 col-sm-6 col-xs-12 review-book">
+        <h3>Salt, Sugar, Fat</h3><h4>book review</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
           in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <img src="assets/09.jpg" class="img-responsive">
+      <div class="col-md-3 col-sm-6 col-xs-12 img-book">
+        <img src="assets/book-SSF.jpg" class="img-responsive">
       </div>
     </div>
   </div>
@@ -151,12 +171,18 @@
         <div class="search" id="search-div">
           <form id="search-form">
             <!-- <label>Search for Recipes!</label> <--></-->
-            <input type="search" id="foodSearch" placeholder="search more recipes...with food2fork.com" value="">
+            <input type="search" id="foodSearch" placeholder="search powered by food2fork.com" value="">
             <button class="btn btn-primary" id="search-button">Find Food!</button>
           </form>
         </div>
         <!--End recipe search area... append search results here-->
         <div id="container-recipes">
+        </div>
+
+        <div id="container-favs">
+          <p id="yourFavs">
+            SHOW FAVS
+          </p>
         </div>
 
       </div>
@@ -165,10 +191,10 @@
 
 
 
-  <footer class="container-fluid text-center">
+  <footer class="container-fluid text-center" id="footer">
     <div class="row footer-row">
       <div class="col-sm-4">
-        <h3>FeelGreatFoodie@gmail.com</h3>
+        <a href="mailto:FeelGreatFoodie@gmail.com"><h3>FeelGreatFoodie@gmail.com</h3></a>
       </div>
       <div class="col-sm-4 hide-me">
         <h3>&nbsp;</h3>

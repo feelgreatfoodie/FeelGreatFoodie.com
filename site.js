@@ -1,7 +1,8 @@
 $(function() {
   let apiBaseSearchURL = "https://g-food2fork.herokuapp.com/api/search?key=663114731c111ec95ac24dc309ea0ad9&count=24&q="
 
-let foodSearch = $("#foodSearch")
+// get info from form to append to api request
+  let foodSearch = $("#foodSearch")
   $("#search-form").submit((e) => {
     e.preventDefault()
     $("#container-recipes").empty()
@@ -11,7 +12,7 @@ let foodSearch = $("#foodSearch")
   })
 
 })
-
+// get recipes from API
 const goToFoodSearch = (requestURL) => {
   fetch(requestURL).then((response) => {
     return response.json()
@@ -22,14 +23,19 @@ const goToFoodSearch = (requestURL) => {
   })
 }
 
+
+
+
+// creat and append recipe cards from API data
 const makeRecipeCards = (data) => {
+
   data.recipes.map((e) => {
     let recipeName = e.title
     let recipeImg = e.image_url
     let recipeURL = e.source_url
 
     let recipeElement =
-    `<div class="recipe">
+      `<div class="recipe">
       <div id="${recipeURL}"><img src="${recipeImg}"></div>
       <div class="recipe-title-header">
         <i class="far fa-star"></i>
@@ -54,19 +60,17 @@ const makeRecipeCards = (data) => {
     // create obj for the recipe, with the data above
     let obj = {
       'title': title,
-      'link': link,
-      'image': image
+      'source_url': link,
+      'image_url': image
     }
-
     //if fas (favorited icon class), send to localstorage, else remove
-    if($(e.target).hasClass('fas')) {
+    if ($(e.target).hasClass('fas')) {
       faves.push(obj)
       localStorage.setItem('favorites', JSON.stringify(faves))
     } else {
       // iterate through the faves array, looking for the recipe you want to remove, once found, remove it with .splice
-
-      for(let i=0; i<faves.length; i++) {
-        if (faves[i].link === link) {
+      for (let i = 0; i < faves.length; i++) {
+        if (faves[i].source_url === link) {
           faves.splice(i, 1)
         }
         localStorage.setItem('favorites', JSON.stringify(faves))
