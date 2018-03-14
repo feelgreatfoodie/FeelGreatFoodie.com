@@ -21,15 +21,15 @@ h4 {
   background-color: rgb(18, 105, 185);
   color: #fff;
   padding: 1% 0;
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
   border: 0;
 }
 
 .navbar-brand {
   float: left;
-  min-height: 55px;
+  /* min-height: 55px; */
   padding: 0px 15px 5px;
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
@@ -51,12 +51,16 @@ a, a:hover, a::after, a:active {
 
 .wrapper {
   padding: 2%;
+  max-width: 80%;
 }
 
 /* BEGIN carousel style */
+.space {
+  height: 110px;
+ }
 .carousel {
   position: relative;
-  margin-top: 77px;
+  /* margin-top: 77px; */
 }
 .carousel-inner img {
   max-height: 600px;
@@ -209,6 +213,9 @@ img {
 }
 
 @media (max-width: 990px) {
+  .space {
+    height: 97px;
+   }
   .reviews {
     display: flex;
     flex-wrap: wrap;
@@ -227,7 +234,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .wrapper {
     padding: 2%;
   }
@@ -289,11 +296,14 @@ img {
 
 @media (max-width: 450px) {
   h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 14px;
   }
+  .space {
+    height: 72px;
+   }
   .journey {
     flex-direction: column;
   }
