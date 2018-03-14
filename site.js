@@ -23,9 +23,6 @@ const goToFoodSearch = (requestURL) => {
   })
 }
 
-
-
-
 // creat and append recipe cards from API data
 const makeRecipeCards = (data) => {
 

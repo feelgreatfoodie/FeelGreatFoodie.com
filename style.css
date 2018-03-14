@@ -54,7 +54,9 @@ a, a:hover, a::after, a:active {
 }
 
 /* BEGIN carousel style */
-
+.carousel {
+  position: relative;
+}
 .carousel-inner img {
   max-height: 600px;
   width: 100%;
@@ -140,7 +142,12 @@ a, a:hover, a::after, a:active {
   max-width: 75%;
   margin: 1% 0 5%;
 }
-
+/* .myRecipesBeta {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+} */
 .recipe {
   flex-basis: 23%;
   margin: 1%;
@@ -223,6 +230,19 @@ img {
   .wrapper {
     padding: 2%;
   }
+  .navbar-fixed-top {
+      /* position: relative; */
+      top: auto;
+  }
+  .navbar-collapse {
+      max-height: none;
+  }
+  body {
+      margin: 0;
+  }
+  .space {
+    height: 77px;
+   }
   .carousel-caption {
     display: none;
   }
