@@ -31,7 +31,7 @@ This site is intended to propagate owner's passion for home cooking from scratch
 ![search results](screenshots/full-search-results.png?raw=true)
 
 ---
-# mobile
+# Mobile
 
 ![mobile](screenshots/mobile-landing.png?raw=true)
 
