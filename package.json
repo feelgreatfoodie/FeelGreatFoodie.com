@@ -1,0 +1,22 @@
+{
+  "name": "q1project-feelgreatfoodie",
+  "version": "1.0.0",
+  "description": "## Installation options",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feelgreatfoodie/Q1project-FeelGreatFoodie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feelgreatfoodie/Q1project-FeelGreatFoodie/issues"
+  },
+  "homepage": "https://github.com/feelgreatfoodie/Q1project-FeelGreatFoodie#readme",
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
+}

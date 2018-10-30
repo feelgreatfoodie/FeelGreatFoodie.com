@@ -58,4 +58,4 @@ typings/
 .env
 
 #mac OS junk
-.DS_store
+.DS_Store
